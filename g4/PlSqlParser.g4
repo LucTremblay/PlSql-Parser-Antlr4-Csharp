@@ -6936,6 +6936,7 @@ numeric_function
     | COUNT '(' (ASTERISK | ((DISTINCT | UNIQUE | ALL)? concatenation)?) ')' over_clause?
     | ROUND '(' expression (',' UNSIGNED_INTEGER)? ')'
     | AVG '(' (DISTINCT | ALL)? expression ')' over_clause?
+    | MIN '(' (DISTINCT | ALL)? expression ')' over_clause?
     | MAX '(' (DISTINCT | ALL)? expression ')' over_clause?
     | LEAST '(' expressions_ ')'
     | GREATEST '(' expressions_ ')'
